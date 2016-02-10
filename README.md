@@ -10,12 +10,6 @@ This project comes in a pre-compiled format, all you need to do is run a single 
 5. Run the JAR file using java -jar argosHUKD.jar
 ****If you have an error with JAVA_HOME, follow instructions listed here: https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/*****
 6. You should see the following to indicate Spring Boot has initialised:
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.2.RELEASE)
 7.The program has been initialised when you can see a blanking cursor. The last line will be spatcherServlet': initialization completed in (x) ms
 8. Open up an internet browser and type in "http://localhost:8080"

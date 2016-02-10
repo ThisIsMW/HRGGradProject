@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Argos Deals Retriever</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+	type="text/javascript"></script>
+<!--  <script src="controller.js"></script>-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Questrial'
+	rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="header">Top Argos (vs Amazon) Deals</div>
+	<div class="loader"><img src="loadingWheel.gif"></img></div>
+	<div class="mainContent">
+		<div id="centreColumn">
+			<div class="resultBox" id="resultOne">
+			<div class = "temperature" id="tempOne"></div>
+				<span class="dealTitle" id="titleOne"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionOne"></p>
+					<p class="descriptionBody" id="eanOne"></p>
+					<p class="descriptionBody" id="priceDifOne"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgOne"></img>
+				</div>
+					<a href="" id="hukdLinkOne">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosOne"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkOne"><span class="merchantLink" id="argosPriceOne"></span></a></div>
+                    <div class = "amazonSection" id="amazonOne"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkOne"><span class="merchantLink" id="amazonPriceOne"></span></a></div>                     
+  				
+			</div>
+			<div class="resultBox" id="resultTwo">
+						<div class = "temperature" id="tempTwo"></div>
+				<span class="dealTitle" id="titleTwo"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionTwo"></p>
+					<p class="descriptionBody" id="eanTwo"></p>
+					<p class="descriptionBody" id="priceDifTwo"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgTwo"></img>
+				</div>
+				<a href="" id="hukdLinkTwo">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosTwo"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkTwo"><span class="merchantLink" id="argosPriceTwo"></span></a></div>
+                    <div class = "amazonSection" id="amazonTwo"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkTwo"><span class="merchantLink" id="amazonPriceTwo"></span></a></div>
+			</div>
+			<div class="resultBox" id="resultThree">
+						<div class = "temperature" id="tempThree"></div>
+			
+				<span class="dealTitle" id="titleThree"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionThree"></p>
+					<p class="descriptionBody" id="eanThree"></p>
+					<p class="descriptionBody" id="priceDifThree"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgThree"></img>
+				</div>
+				<a href="" id="hukdLinkThree">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosThree"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkThree"><span class="merchantLink" id="argosPriceThree"></span></a></div>
+                    <div class = "amazonSection" id="amazonThree"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkThree"><span class="merchantLink" id="amazonPriceThree"></span></a></div>
+			</div>
+			<div class="resultBox" id="resultFour">
+						<div class = "temperature" id="tempFour"></div>
+			
+				<span class="dealTitle" id="titleFour"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionFour"></p>
+					<p class="descriptionBody" id="eanFour"></p>
+					<p class="descriptionBody" id="priceDifFour"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgFour"></img>
+				</div>
+				<a href="" id="hukdLinkFour">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosFour"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkFour"><span class="merchantLink" id="argosPriceFour"></span></a></div>
+                    <div class = "amazonSection" id="amazonFour"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkFour"><span class="merchantLink" id="amazonPriceFour"></span></a></div>
+			</div>
+			<div class="resultBox" id="resultFive">
+						<div class = "temperature" id="tempFive"></div>
+			
+				<span class="dealTitle" id="titleFive"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionFive"></p>
+					<p class="descriptionBody" id="eanFive"></p>
+					<p class="descriptionBody" id="priceDifFive"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgFive"></img>
+				</div>
+				<a href="" id="hukdLinkFive">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosFive"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkFive"><span class="merchantLink" id="argosPriceFive"></span></a></div>
+                    <div class = "amazonSection" id="amazonFive"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkFive"><span class="merchantLink" id="amazonPriceFive"></span></a></div>
+                    
+			</div>
+			<div class="resultBox" id="resultSix">
+						<div class = "temperature" id="tempSix"></div>
+			
+				<span class="dealTitle" id="titleSix"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionSix"></p>
+					<p class="descriptionBody" id="eanSix"></p>
+					<p class="descriptionBody" id="priceDifSix"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgSix"></img>
+				</div>
+				<a href="" id="hukdLinkSix">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosSix"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkSix"><span class="merchantLink" id="argosPriceSix"></span></a></div>
+                    <div class = "amazonSection" id="amazonSix"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkSix"><span class="merchantLink" id="amazonPriceSix"></span></a></div>
+				
+			</div>
+			<div class="resultBox" id="resultSeven">
+						<div class = "temperature" id="tempSeven"></div>
+			
+				<span class="dealTitle" id="titleSeven"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionSeven"></p>
+					<p class="descriptionBody" id="eanSeven"></p>
+					<p class="descriptionBody" id="priceDifSeven"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgSeven"></img>
+				</div>
+				<a href="" id="hukdLinkSeven">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosSeven"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkSeven"><span class="merchantLink" id="argosPriceSeven"></span></a></div>
+                    <div class = "amazonSection" id="amazonSeven"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkSeven"><span class="merchantLink" id="amazonPriceSeven"></span></a></div>
+                    
+			</div>
+			<div class="resultBox" id="resultEight">
+						<div class = "temperature" id="tempEight"></div>
+			
+				<span class="dealTitle" id="titleEight"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionEight"></p>
+					<p class="descriptionBody" id="eanEight"></p>
+					<p class="descriptionBody" id="priceDifEight"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgEight"></img>
+				</div>
+				<a href="" id="hukdLinkEight">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosEight"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkEight"><span class="merchantLink" id="argosPriceEight"></span></a></div>
+                    <div class = "amazonSection" id="amazonEight"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkEight"><span class="merchantLink" id="amazonPriceEight"></span></a></div>
+                   
+			</div>
+			<div class="resultBox" id="resultNine">
+						<div class = "temperature" id="tempNine"></div>
+			
+				<span class="dealTitle" id="titleNine"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionNine"></p>
+					<p class="descriptionBody" id="eanNine"></p>
+					<p class="descriptionBody" id="priceDifNine"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgNine"></img>
+				</div>
+				<a href="" id="hukdLinkNine">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosNine"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkNine"><span class="merchantLink" id="argosPriceNine"></span></a></div>
+                    <div class = "amazonSection" id="amazonNine"><img src="amazon.png"  height="27" width="27"><a href ="#" id="amazonLinkNine"><span class="merchantLink" id="amazonPriceNine"></span></a></div>
+                   
+			</div>
+			<div class="resultBox" id="resultTen">
+						<div class = "temperature" id="tempTen"></div>
+			
+				<span class="dealTitle" id="titleTen"></span>
+				<hr class = "divider"></hr>
+				<div class = "offerDescription">
+					<p class="descriptionBody" id="descriptionTen"></p>
+					<p class="descriptionBody" id="eanTen"></p>
+					<p class="descriptionBody" id="priceDifTen"></p>
+				</div>
+				<div class = "dealImg">
+					<img src="" id="imgTen"></img>
+				</div>
+				<a href="" id="hukdLinkTen">
+					<div class="hukdBtn">
+                    <p class="hukdBtnTxt">Go to Deal</p>
+                    </div></a>
+                    <div class = "argosSection" id="argosTen"><img src="argos.png"  height=27 width="27"><a href ="#" id="argosLinkTen"><span class="merchantLink" id="argosPriceTen"></span></a></div>
+                    <div class = "amazonSection" id="amazonTen"><img src="amazon.png"  height="27" width="27"><a href ="#" id="argosLinkTen"><span class="merchantLink" id="argosPriceTen"></span></a></div>                     
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p id="footerText">Site by Max Wootton - view <a href = "https://github.com/thisismw">GitHub</a></p>
+	</div>
+
+
+	<script type="text/javascript">
+	
+var req = new XMLHttpRequest();
+
+
+req.onloadend = function(){
+   $('.loader').hide();
+}
+req.open('GET', "http://localhost:8080/getDeals", false);
+req.send(null);
+if (req.status ==200){
+	var html = req.responseText;
+	console.log(html);
+	var titles = [];
+	var dealUrl = [];
+	var productUrl = [];
+	var imgUrl = [];
+	var description = [];
+	var temperature = [];
+	var ean = [];
+	var price = [];
+	var amazonPrice = [];
+	var priceDifference = [];
+	var amazonUrl = [];
+	
+	$.each($.parseJSON(html), function(key,value){
+		console.log(value.title);
+		console.log(value.dealUrl);
+		console.log(value.productUrl);
+		console.log(value.imgUrl);
+		console.log(value.description);
+		console.log(value.temperature);
+		console.log(value.ean);
+		console.log(value.price);
+		console.log(value.amazonPrice);
+		console.log(value.priceDifference);
+		console.log(value.amazonUrl);
+		titles.push(value.title);
+		dealUrl.push(value.dealUrl);
+		productUrl.push(value.productUrl);
+		imgUrl.push(value.imgUrl);
+		description.push(value.description);
+		temperature.push(value.temperature);
+		ean.push(value.ean);
+		price.push(value.price);
+		amazonPrice.push(value.amazonPrice);
+		priceDifference.push(value.priceDifference);
+		amazonUrl.push(value.amazonUrl);
+    });
+	
+	console.log(titles);
+	console.log(dealUrl);
+	console.log(productUrl);
+	console.log(imgUrl);
+	console.log(description);
+	console.log(temperature);
+	console.log(ean);
+	console.log(price);
+	console.log(amazonPrice);
+	console.log(priceDifference);
+	console.log(amazonUrl);
+	//populating HTML with JSON elements! Future improvements: put this in a loop to remove code duplication
+	document.getElementById("titleOne").innerHTML = titles[0];
+	document.getElementById("titleTwo").innerHTML = titles[1];
+	document.getElementById("titleThree").innerHTML = titles[2];
+	document.getElementById("titleFour").innerHTML = titles[3];
+	document.getElementById("titleFive").innerHTML = titles[4];
+	document.getElementById("titleSix").innerHTML = titles[5];
+	document.getElementById("titleSeven").innerHTML = titles[6];
+	document.getElementById("titleEight").innerHTML = titles[7];
+	document.getElementById("titleNine").innerHTML = titles[8];
+	document.getElementById("titleTen").innerHTML = titles[9];
+	document.getElementById("tempOne").innerHTML = temperature[0];
+	document.getElementById("tempTwo").innerHTML = temperature[1];
+	document.getElementById("tempThree").innerHTML = temperature[2];
+	document.getElementById("tempFour").innerHTML = temperature[3];
+	document.getElementById("tempFive").innerHTML = temperature[4];
+	document.getElementById("tempSix").innerHTML = temperature[5];
+	document.getElementById("tempSeven").innerHTML = temperature[6];
+	document.getElementById("tempEight").innerHTML = temperature[7];
+	document.getElementById("tempNine").innerHTML = temperature[8];
+	document.getElementById("tempTen").innerHTML = temperature[9];
+	document.getElementById('imgOne').src = imgUrl[0];
+	document.getElementById('imgTwo').src = imgUrl[1];
+	document.getElementById('imgThree').src = imgUrl[2];
+	document.getElementById('imgFour').src = imgUrl[3];
+	document.getElementById('imgFive').src = imgUrl[4];
+	document.getElementById('imgSix').src = imgUrl[5];
+	document.getElementById('imgSeven').src = imgUrl[6];
+	document.getElementById('imgEight').src = imgUrl[7];
+	document.getElementById('imgNine').src = imgUrl[8];
+	document.getElementById('imgTen').src = imgUrl[9];
+	document.getElementById('descriptionOne').innerHTML = "Description: " + description[0];
+	document.getElementById('eanOne').innerHTML = "EAN: " + ean[0];
+	document.getElementById('priceDifOne').innerHTML = "Price Comparison: " + priceDifference[0];
+	document.getElementById('descriptionTwo').innerHTML = "Description: " + description[1];
+	document.getElementById('eanTwo').innerHTML = "EAN: " + ean[1];
+	document.getElementById('priceDifTwo').innerHTML = "Price Comparison: " + priceDifference[1];
+	document.getElementById('descriptionThree').innerHTML = "Description: " + description[2];
+	document.getElementById('eanThree').innerHTML = "EAN: " + ean[2];
+	document.getElementById('priceDifThree').innerHTML = "Price Comparison: " + priceDifference[2];
+	document.getElementById('descriptionFour').innerHTML = "Description: " + description[3];
+	document.getElementById('eanFour').innerHTML = "EAN: " + ean[3];
+	document.getElementById('priceDifFour').innerHTML = "Price Comparison: " + priceDifference[3];
+	document.getElementById('descriptionFive').innerHTML = "Description: " + description[4];
+	document.getElementById('eanFive').innerHTML = "EAN: " + ean[4];
+	document.getElementById('priceDifFive').innerHTML = "Price Comparison: " + priceDifference[4];
+	document.getElementById('descriptionSix').innerHTML = "Description: " + description[5];
+	document.getElementById('eanSix').innerHTML = "EAN: " + ean[5];
+	document.getElementById('priceDifSix').innerHTML = "Price Comparison: " + priceDifference[5];
+	document.getElementById('descriptionSeven').innerHTML = "Description: " + description[6];
+	document.getElementById('eanSeven').innerHTML = "EAN: " + ean[6];
+	document.getElementById('priceDifSeven').innerHTML = "Price Comparison: " + priceDifference[6];
+	document.getElementById('descriptionEight').innerHTML = "Description: " + description[7];
+	document.getElementById('eanEight').innerHTML = "EAN: " + ean[7];
+	document.getElementById('priceDifEight').innerHTML = "Price Comparison: " + priceDifference[7];
+	document.getElementById('descriptionNine').innerHTML = "Description: " + description[8];
+	document.getElementById('eanNine').innerHTML = "EAN: " + ean[8];
+	document.getElementById('priceDifNine').innerHTML = "Price Comparison: " + priceDifference[8];
+	document.getElementById('descriptionTen').innerHTML = "Description: " + description[9];
+	document.getElementById('eanTen').innerHTML = "EAN: " + ean[9];
+	document.getElementById('priceDifTen').innerHTML = "Price Comparison: " + priceDifference[9];
+	document.getElementById('hukdLinkOne').href = dealUrl[0];
+	document.getElementById('hukdLinkTwo').href = dealUrl[1];
+	document.getElementById('hukdLinkThree').href = dealUrl[2];
+	document.getElementById('hukdLinkFour').href = dealUrl[3];
+	document.getElementById('hukdLinkFive').href = dealUrl[4];
+	document.getElementById('hukdLinkSix').href = dealUrl[5];
+	document.getElementById('hukdLinkSeven').href = dealUrl[6];
+	document.getElementById('hukdLinkEight').href = dealUrl[7];
+	document.getElementById('hukdLinkNine').href = dealUrl[8];
+	document.getElementById('hukdLinkTen').href = dealUrl[9];
+	if(price[0] != "£N/A"){
+		document.getElementById('argosPriceOne').innerHTML = price[0];
+		document.getElementById('argosLinkOne').href = productUrl[0];
+	}
+	else {
+		document.getElementById('argosOne').style.display = "none";
+	}
+	if(price[1] != "£N/A"){
+		document.getElementById('argosPriceTwo').innerHTML = price[1];
+		document.getElementById('argosLinkTwo').href = productUrl[1];
+	}
+	else {
+		document.getElementById('argosTwo').style.display = "none";
+	}
+	if(price[2] != "£N/A"){
+		document.getElementById('argosPriceThree').innerHTML = price[2];
+		document.getElementById('argosLinkThree').href = productUrl[2];
+	}
+	else {
+		document.getElementById('argosThree').style.display = "none";
+	}
+	if(price[3] != "£N/A"){
+		document.getElementById('argosPriceFour').innerHTML = price[3];
+		document.getElementById('argosLinkFour').href = productUrl[3];
+	}
+	else {
+		document.getElementById('argosFour').style.display = "none";
+	}
+	if(price[4] != "£N/A"){
+		document.getElementById('argosPriceFive').innerHTML = price[4];
+		document.getElementById('argosLinkFive').href = productUrl[4];
+	}
+	else {
+		document.getElementById('argosFive').style.display = "none";
+	}
+	if(price[5] != "£N/A"){
+		document.getElementById('argosPriceSix').innerHTML = price[5];
+		document.getElementById('argosLinkSix').href = productUrl[5];
+	}
+	else {
+		document.getElementById('argosSix').style.display = "none";
+	}
+	if(price[6] != "£N/A"){
+		document.getElementById('argosPriceSeven').innerHTML = price[6];
+		document.getElementById('argosLinkSeven').href = productUrl[6];
+	}
+	else {
+		document.getElementById('argosSeven').style.display = "none";
+	}
+	if(price[7] != "£N/A"){
+		document.getElementById('argosPriceEight').innerHTML = price[7];
+		document.getElementById('argosLinkEight').href = productUrl[7];
+	}
+	else {
+		document.getElementById('argosEight').style.display = "none";
+	}
+	if(price[8] != "£N/A"){
+		document.getElementById('argosPriceNine').innerHTML = price[8];
+		document.getElementById('argosLinkNine').href = productUrl[8];
+	}
+	else {
+		document.getElementById('argosNine').style.display = "none";
+	}
+	if(price[9] != "£N/A"){
+		document.getElementById('argosPriceTen').innerHTML = price[9];
+		document.getElementById('argosLinkTen').href = productUrl[9];
+	}
+	else {
+		document.getElementById('argosTen').style.display = "none";
+	}
+	if(amazonPrice[0] != "£N/A"){
+		document.getElementById('amazonPriceOne').innerHTML = amazonPrice[0];
+		document.getElementById('amazonLinkOne').href = amazonUrl[0];
+	}
+	else {
+		document.getElementById('amazonOne').style.display = "none";
+	}
+	if(amazonPrice[1] != "£N/A"){
+		document.getElementById('amazonPriceTwo').innerHTML = amazonPrice[1];
+		document.getElementById('amazonLinkTwo').href = amazonUrl[1];
+	}
+	else {
+		document.getElementById('amazonTwo').style.display = "none";
+	}
+	if(amazonPrice[2] != "£N/A"){
+		document.getElementById('amazonPriceThree').innerHTML = amazonPrice[2];
+		document.getElementById('amazonLinkThree').href = amazonUrl[2];
+	}
+	else {
+		document.getElementById('amazonThree').style.display = "none";
+	}
+	if(amazonPrice[3] != "£N/A"){
+		document.getElementById('amazonPriceThree').innerHTML = amazonPrice[3];
+		document.getElementById('amazonLinkThree').href = amazonUrl[3];
+	}
+	else {
+		document.getElementById('amazonFour').style.display = "none";
+	}
+	if(amazonPrice[4] != "£N/A"){
+		document.getElementById('amazonPriceFive').innerHTML = amazonPrice[4];
+		document.getElementById('amazonLinkFive').href = amazonUrl[4];
+	}
+	else {
+		document.getElementById('amazonFive').style.display = "none";
+	}
+	if(amazonPrice[5] != "£N/A"){
+		document.getElementById('amazonPriceSix').innerHTML = amazonPrice[5];
+		document.getElementById('amazonLinkSix').href = amazonUrl[5];
+	}
+	else {
+		document.getElementById('amazonSix').style.display = "none";
+	}
+	if(amazonPrice[6] != "£N/A"){
+		document.getElementById('amazonPriceSeven').innerHTML = amazonPrice[6];
+		document.getElementById('amazonLinkSeven').href = amazonUrl[6];
+	}
+	else {
+		document.getElementById('amazonSeven').style.display = "none";
+	}
+	if(amazonPrice[7] != "£N/A"){
+		document.getElementById('amazonPriceEight').innerHTML = amazonPrice[7];
+		document.getElementById('amazonLinkEight').href = amazonUrl[7];
+	}
+	else {
+		document.getElementById('amazonEight').style.display = "none";
+	}
+	if(amazonPrice[8] != "£N/A"){
+		document.getElementById('amazonPriceNine').innerHTML = amazonPrice[8];
+		document.getElementById('amazonLinkNine').href = amazonUrl[8];
+	}
+	else {
+		document.getElementById('amazonNine').style.display = "none";
+	}
+	if(amazonPrice[9] != "£N/A"){
+		document.getElementById('amazonPriceTen').innerHTML = amazonPrice[9];
+		document.getElementById('amazonLinkTen').href = amazonUrl[9];
+	}
+	else {
+		document.getElementById('amazonTen').style.display = "none";
+	}
+}
+</script>
+</body>
+</html>

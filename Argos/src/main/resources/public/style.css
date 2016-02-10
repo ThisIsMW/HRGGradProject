@@ -1,0 +1,208 @@
+/* 
+    Created on : 08-Feb-2016, 15:13:04
+    Author     : Max Wootton
+*/
+*{ /*getting rid of webkit margins/borders. I'll set my own thanks. */
+-webkit-margin-before:0px;
+-webkit-margin-end:0px;
+-webkit-margin-after:0px;
+-webkit-margin-start:0px;
+-webkit-padding-before:0px;
+-webkit-padding-end:0px;
+-webkit-padding-after:0px
+-webkit-padding-start:0px;
+margin-top: 0;
+}
+
+a{
+	text-decoration: none;
+    color: rgb(24, 57, 105);
+}
+html, body{
+	height:100%;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    font-family: 'Questrial', sans-serif;
+    background-color: #C7C7C7;
+
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    line-height: 90px;
+    font-size: 35px;
+        background: teal;
+    color: white;
+}
+
+.temperature{
+    position: relative;
+    top: -7px;
+    right: 0px;
+    font-size: 1em;
+    background: #9C1E1E;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+    float: right;
+}
+
+.mainContent{
+    background-color: #C7C7C7;
+    margin: 0 auto;
+}
+
+.resultBox{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: #F2F5F5;
+    border: 2px white;
+    font-size: 17px;
+    min-height: 231px;
+    margin-bottom: 13px;
+    overflow:auto;
+}
+
+hr.divider{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 9px;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+.offerDescription{
+	float: left;
+	font-size: 12px;
+	width: 70%;
+	line-height: 14px;
+}
+.dealImg{
+	float:right;
+	    max-width: 30%;
+}
+
+.hukdBtn, .amzBtn, .argosBtn{
+    width: 86px;
+    vertical-align: middle;
+    height: 27px;
+    margin-top: 14px;
+    margin-right: 9px;
+    font-size: 15px;
+    background: #C5D6E8 url("go.png") 74px 3px no-repeat;
+    clear: both;
+}
+
+.hukdBtn{
+	background-color: #C5D6E8;
+	float:left;
+}
+
+.hukdBtnTxt a{
+    color:inherit;
+}
+.hukdBtn:hover{
+    background-image: url("goHover.png");
+    background-color: rgb(51, 83, 139);
+}
+
+.hukdBtnTxt{
+    font-size: 14px;
+    padding-left: 5px;
+    vertical-align: middle;
+    color: rgb(62, 62, 62);
+}
+.hukdBtnTxt:hover{
+    color:white;
+}
+
+.merchantLink{
+    font-size: 19px;
+}
+
+.argosSection, .amazonSection{
+	width: 100px;
+    height: 27px;
+    float: left;
+    margin-top: 14px;
+    margin-right: 10px;
+    line-height: 27px;
+    font-size: 14px;
+}
+
+.argosSection{
+	background: #FFC2B4;
+}
+
+.amazonSection{
+	background:#FFEFB4;
+}
+
+#centreColumn {
+    text-align: left;
+    font-size: 1.5em;
+    background-color: white;
+    color: #18242F;
+    min-height: 700px;
+    height: 100%;
+    max-width: 1106px;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    line-height: 28px;
+}
+
+.dealTitle{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+.descriptionBody{
+	font-size: 14px;
+	padding-bottom: 7px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #C7C7C7;
+    background-attachment: scroll;
+    background-position-y: 247px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 56px;
+}
+
+.footerText {
+    padding-top: 21px;
+    text-align: center;
+}
+
+
+/* Loader wheel CSS from http://projects.lukehaas.me/css-loaders/ */
+.loader {
+font-size: 20px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+
+}
+
+

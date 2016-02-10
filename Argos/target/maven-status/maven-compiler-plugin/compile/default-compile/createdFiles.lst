@@ -1,0 +1,6 @@
+dealRetriever\SignedRequestsHelper.class
+dealRetriever\RestAPIController.class
+dealRetriever\HUKD.class
+dealRetriever\AmazonPriceGrabber.class
+dealRetriever\HUKDRetriever.class
+dealRetriever\Application.class
